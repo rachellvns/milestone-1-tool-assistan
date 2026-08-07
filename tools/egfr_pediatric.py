@@ -3,8 +3,6 @@
 # This is not interchangeable with adult CKD-EPI 2021 eGFR values
 # Use egfr.py (CKD-EPI 2021) for patients over 25.
 
-from xml.dom.minidom import _ElementChildrenPlusFragment, ElementInfo
-
 from pydantic import BaseModel, Field
 from typing import Literal
 
