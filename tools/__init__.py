@@ -15,9 +15,9 @@ TOOLS = [
         {"name": "get_fx_rate",
         "description": "Get the current exchange rate between two currencies."
         "Use for ANY currency conversion instead of estimating yourself.",
-        "input_schema": {"type": "object", "properties": {"base_currency": {"type": "string", "description": "3-letter currency code to convert from, e.g USD"},
-                         "quote_currency": {"type": "string", "description": "3-letter currency code to convert to, e.g MYR"}},
-                        "required": ["base_currency", "quote_currency"]}},
+        "input_schema": {"type": "object", "properties": {"base": {"type": "string", "description": "3-letter currency code to convert from, e.g USD"},
+                         "quote": {"type": "string", "description": "3-letter currency code to convert to, e.g MYR"}},
+                        "required": ["base", "quote"]}},
         
         {"name": "read_data",
          "description": "Read and return the contents of a data file (e.g CSV, JSON, TXT) from disk."
