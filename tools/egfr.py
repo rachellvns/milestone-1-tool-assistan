@@ -5,7 +5,7 @@ from typing import Literal
 
 class EgfrInput(BaseModel):
     creatinine_mgdl: float = Field(gt=0, description="Serum creatinine in mg/dL")
-    age: int = Field(gt=0, le=120, description="Age in years; must be a plausible human age (1-120)")
+    age: int = Field(gt=25, le=120, description="Age in years; must be a plausible human age (1-120)")
     sex: Literal["male", "female"]
     
 def classify_stage(egfr: float) -> str:
