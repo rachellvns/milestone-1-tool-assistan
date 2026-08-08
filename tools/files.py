@@ -6,8 +6,8 @@ from pydantic import BaseModel, field_validator
 DATA_DIR = (Path(__file__).parent.parent / "data").resolve()
 MAX_ROWS = 200
 
-print("CURRENT FILE:", __file__)
-print("DATA_DIR:", DATA_DIR)
+# print("CURRENT FILE:", __file__)
+# print("DATA_DIR:", DATA_DIR)
 
 class FileInput(BaseModel):
     path: str
