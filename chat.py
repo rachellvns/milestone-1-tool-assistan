@@ -78,15 +78,15 @@ def run_turn(msgs: list) -> str:
 
         if stream_output:
             print()  # newline after any streamed text, before DEBUG/tool lines
-        print(f"DEBUG: stop_reason={resp.stop_reason}")
+       # print(f"DEBUG: stop_reason={resp.stop_reason}")
 
         if resp.stop_reason != "tool_use":
             return "".join(b.text for b in resp.content
                            if b.type == "text")
 
         tool_blocks = [b for b in resp.content if b.type == "tool_use"]
-        for b in tool_blocks:
-            print(f"DEBUG: calling tool '{b.name}' with input {b.input}")
+        #for b in tool_blocks:
+        #    print(f"DEBUG: calling tool '{b.name}' with input {b.input}")
 
         calls += len(tool_blocks)
         if calls > MAX_TOOL_CALLS:
