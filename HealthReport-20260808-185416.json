@@ -1,0 +1,25 @@
+{
+  "bmi": {
+    "value": 20.5,
+    "category": "Normal",
+    "standard": "asian_bmi",
+    "missing_fields": []
+  },
+  "egfr": {
+    "value": null,
+    "unit": "mL/min/1.73m2",
+    "ckd_stage": null,
+    "missing_fields": [
+      "not_selected_by_user"
+    ]
+  },
+  "cvd_risk": {
+    "value_percent": null,
+    "category": null,
+    "model": "Framingham 2008",
+    "missing_fields": [
+      "not_selected_by_user"
+    ]
+  },
+  "disclaimer": "This report is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Please consult a qualified healthcare provider to discuss these results."
+}
